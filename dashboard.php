@@ -28,7 +28,7 @@ Message: INVALID ACCESS";
 
 }
 
-function fetchContent($key="",$token=""){
+function fetchContent($key,$token=""){
 	echo "
 	<center>
 	<h1>WELCOME TECHIE (PUBLIC KEY ACCESS)</h1><hr>
