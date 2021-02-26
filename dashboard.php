@@ -36,19 +36,13 @@ function fetchContent($key,$token=""){
 	
 	echo "<br><br>HTTP/S API :<br>";
 	print_r($_SERVER['SERVER_NAME']."/fetchProxy/?key=".$key."&proxyType=http");
-	$url = "https://".$_SERVER['SERVER_NAME']."/fetchProxy/?key=".$key."&proxyType=http";
-	print_r('<br><form action="'.$url.'"><button type="submit">OPEN HTTP PROXIES</button></form>');
-
+	
 	echo "<br><br>SOCKS4 API :<br>";
 	print_r($_SERVER['SERVER_NAME']."/fetchProxy/?key=".$key."&proxyType=socks4");
-	$url = "https://".$_SERVER['SERVER_NAME']."/fetchProxy/?key=".$key."&proxyType=socks4";
-	print_r('<br><form action="'.$url.'"><button type="submit">OPEN SOCKS4 PROXIES</button></form>');
 	
 	echo "<br><br>SOCKS5 API :<br>";
 	print_r($_SERVER['SERVER_NAME']."/fetchProxy/?key=".$key."&proxyType=socks5");
-	$url = "https://".$_SERVER['SERVER_NAME']."/fetchProxy/?key=".$key."&proxyType=socks5";
-	print_r('<br><form action="'.$url.'"><button type="submit">OPEN SOCKS5 PROXIES</button></form></center>"');
-
+	
 	if($_SERVER['SERVER_NAME']==="localhost"){
 	print_r("<center>FOR LOCALHOST : "."http://localhost/php_learn/20feb/fetchProxy/?key=".$key."</center>");
 	}
