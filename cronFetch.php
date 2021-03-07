@@ -1,5 +1,5 @@
 <?php
-set_time_limit(3*60);
+set_time_limit(5*60);
 
 
 header('Content-Type: text/plain');
