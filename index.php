@@ -81,7 +81,7 @@ if(isset($_GET['logout'])){
     header("Location: index.php"); //Redirect the user
     }
     else
-    	header("Location: ".$_SERVER['HTTP_HOST']."");
+    	header("Location: index.php");
 }
 //logout ends
 
